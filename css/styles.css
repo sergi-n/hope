@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-color: rgba(227, 228, 232, 1);
+}
+
+.main_container {
+    position: relative;
+    margin: 100px auto;
+    width: 1500px;
+    height: 800px;
+    border-radius: 15px;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(245, 247, 251, 1);
+}
+
+.dashboard {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: coral;
+    transition: left 1000ms, top 1000ms, width 1000ms, height 1000ms;
+}
+
+.menu_icon {
+    position: absolute;
+    z-index: 3;
+    left: 20px;
+    top: 20px;
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 5px -1px rgba(000, 000, 000, 0.3);
+}
+
+.menu_icon img {
+    display: block;
+    margin: 10px auto;
+    width: 20px;
+    cursor: pointer;
+}
+
+.show_hide_menu {
+    left: 50%;
+    top: 5px;
+    width: calc(50% - 5px);
+    height: calc(100% - 10px);
+}
+
+
+/* .content {
+    position: absolute;
+    z-index: 1;
+    left: 21px;
+    top: 21px;
+    border-radius: 15px;
+    width: 48px;
+    height: 48px;
+    background-color: coral;
+    transition: top 1000ms, left 1000ms, width 1000ms, height 1000ms;
+} */
+
+.right_menu {
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 5px;
+    width: 100px;
+    height: 790px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.check_taxi {
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #FFCC33;
+}
+
+.check_pti_date {
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #3AA655;
+}
+
+.search_in_db {
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #FFFF66;
+}
