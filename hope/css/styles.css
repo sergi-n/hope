@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/bpg-glaho-webfont.ttf');
+}
+
+body {
+    margin: 0;
+}
+
+table,
+td {
+    border-spacing: 20px;
+    padding: 0;
+}
+
+td {
+    vertical-align: top;
+}
+
+.main_container {
+    margin: auto;
+    width: 1000px;
+    height: 800px;
+    background-color: rgba(246, 245, 250, 1);
+}
+
+.icon_box {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 5px 10px 20px -18px rgba(000, 000, 000, 0.5);
+    transition: box-shadow 500ms, width 500ms, height 500ms;
+}
+
+.icon_box_title {
+    font-family: 'Arial';
+    font-size: 18px;
+    color: #5603C2;
+}
+
+.animate_icon_box {
+    width: 200px;
+    height: 250px;
+    box-shadow: 5px 15px 20px -15px rgba(000, 000, 000, 0.5);
+}

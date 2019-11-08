@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main_container">
+        <table>
+            <tr>
+                <td>
+                    <div class="icon_box" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"><span class="icon_box_title">სტატისტიკა</span></div>
+                </td>
+                <td>
+                    <div class="icon_box" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"></div>
+                </td>
+                <td>
+                    <div class="icon_box" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"></div>
+                </td>
+                <td>
+                    <div class="icon_box" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function animate_icon_box(event) {
+            event.target.classList.toggle('animate_icon_box');
+        }
+    </script>
+</body>
+
+</html>
