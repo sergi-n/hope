@@ -11,15 +11,55 @@
 
 <body>
     <div class="main_container">
-        <div class="dashboard">
 
-        </div>
-        <div class="menu_icon">
-            <img src="./images/icons/menu.svg" onclick="show_hide_menu()">
-        </div>
+        <table class="dashboard_icon_menu">
+            <tr>
+                <td>
+                    <div class="statistics menu_item">
+                        <div class="icon"></div>
+                        <div class="menu_item_title">
+                            სტატისტიკა
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="statistics menu_item">
+                        <div class="icon"></div>
+                        <div class="menu_item_title">
+                            ახალი განაცხადი (ფიზ. პირი)
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="menu_item" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"></div>
+                </td>
+                <td>
+                    <div class="menu_item" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"></div>
+                </td>
+                <td>
+                    <div class="menu_item" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"></div>
+                </td>
+                <td>
+                    <div class="menu_item" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"></div>
+                </td>
+                <td>
+                    <div class="menu_item" onmouseover="animate_icon_box(event)" onmouseout="animate_icon_box(event)"></div>
+                </td>
+            </tr>
+        </table>
+
         <div class="menu">
 
         </div>
+
+        <div class="dashboard">
+
+        </div>
+
+        <div class="menu_icon">
+            <img src="./images/icons/menu.svg" onclick="show_hide_menu()">
+        </div>
+
 
         <!-- <div class="right_menu">
             <div class="check_taxi">
@@ -36,11 +76,9 @@
     <script>
         function show_hide_menu() {
             document.getElementsByClassName('dashboard')[0].classList.toggle('show_hide_menu');
+            document.getElementsByClassName('dashboard_icon_menu')[0].classList.toggle('slide_dashboard_icon_menu');
         }
     </script>
 </body>
 
 </html>
-
-
-#808080

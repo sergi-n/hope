@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/bpg-glaho-webfont.ttf');
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -10,15 +15,32 @@ body {
     background-color: rgba(227, 228, 232, 1);
 }
 
+table,
+td {
+    border-spacing: 20px;
+    padding: 0;
+}
+
+td {
+    vertical-align: top;
+}
+
+
+/* Main container layer */
+
 .main_container {
     position: relative;
     margin: 50px auto;
     width: calc(100% - 100px);
     min-width: 1500px;
-    height: calc(100% - 100px);
-    min-height: 1000px;
+    height: 90%;
+    min-height: 700px;
     border-radius: 15px;
+    overflow: hidden;
 }
+
+
+/* Menu layer */
 
 .menu {
     position: absolute;
@@ -28,8 +50,11 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background-color: coral;
+    background-color: rgba(76, 86, 192, 1);
 }
+
+
+/* Dashboard layer */
 
 .dashboard {
     position: absolute;
@@ -42,6 +67,84 @@ body {
     background-color: rgba(245, 247, 251, 1);
     transition: left 1000ms, top 1000ms, width 1000ms, height 1000ms;
 }
+
+.dashboard_icon_menu {
+    position: absolute;
+    z-index: 3;
+    left: 40px;
+    top: 40px;
+    transition: left 1000ms;
+}
+
+.slide_dashboard_icon_menu {
+    left: calc(50% - 95px);
+}
+
+.dashboard_icon_menu .menu_item {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 5px 10px 20px -18px rgba(000, 000, 000, 0.5);
+    transition: width 500ms, height 500ms, background-color 500ms, box-shadow 500ms;
+}
+
+.dashboard_icon_menu .menu_item:hover {
+    width: 200px;
+    height: 250px;
+    background-color: rgba(52, 73, 94, 1);
+    box-shadow: 5px 15px 20px -15px rgba(76, 86, 192, 1);
+}
+
+.dashboard_icon_menu .statistics:hover {
+    background-color: rgba(52, 73, 94, 1);
+    box-shadow: 5px 15px 20px -15px rgba(76, 86, 192, 1);
+}
+
+
+/* .dashboard_icon_menu .menu_item:hover {
+    box-shadow: 5px 15px 20px -15px rgba(000, 000, 000, 0.5);
+} */
+
+.dashboard_icon_menu .menu_item .menu_item_title {
+    margin: 20px 0 0;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 18px;
+    color: #808080;
+    transition: font-size 500ms, color 500ms;
+}
+
+.dashboard_icon_menu .menu_item:hover .menu_item_title {
+    font-size: 27px;
+    color: white;
+}
+
+.dashboard_icon_menu .statistics .icon {
+    margin: auto;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/icons/statistics.png');
+    background-size: 32px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(52, 73, 94, 0.2);
+    transition: width 500ms, height 500ms, background-size 500ms;
+}
+
+.dashboard_icon_menu .statistics:hover .icon {
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/icons/statistics-hover.png');
+    background-size: 48px 48px;
+    background-color: rgba(255, 255, 155, 0.2);
+}
+
+
+/* Menu icon layer */
 
 .menu_icon {
     position: absolute;
@@ -68,6 +171,9 @@ body {
     width: calc(50% - 5px);
     height: calc(100% - 10px);
 }
+
+
+/*  */
 
 .right_menu {
     position: absolute;
@@ -103,3 +209,45 @@ body {
     border-radius: 15px;
     background-color: #FFFF66;
 }
+
+
+/* Test */
+
+.quick_search_button {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgba(98, 72, 255, 1);
+    box-shadow: 0px 8px 10px 0px rgba(98, 72, 255, 0.6);
+    transition: box-shadow 500ms;
+}
+
+.quick_search_button img {
+    margin: 10px auto;
+    width: 50px;
+}
+
+.pti_date_button {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgba(0, 172, 238, 1);
+    box-shadow: 0px 8px 10px 0px rgba(0, 172, 238, 0.6);
+    transition: box-shadow 500ms;
+}
+
+.taxi_status_button {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgba(255, 243, 128, 1);
+    box-shadow: 0px 8px 10px 0px rgba(255, 243, 128, 0.5);
+    transition: box-shadow 500ms;
+}
+
+fff380
