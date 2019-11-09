@@ -84,36 +84,40 @@ td {
     width: 150px;
     height: 200px;
     border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.1);
     box-sizing: border-box;
-    padding: 20px;
+    padding: 30px 10px 10px;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 5px 10px 20px -18px rgba(000, 000, 000, 0.5);
+    /* box-shadow: 0px 0px 10px rgba(000, 000, 000, 0.1); */
     transition: width 500ms, height 500ms, background-color 500ms, box-shadow 500ms;
 }
 
 .dashboard_icon_menu .menu_item:hover {
     width: 200px;
     height: 250px;
-    background-color: rgba(52, 73, 94, 1);
-    box-shadow: 5px 15px 20px -15px rgba(76, 86, 192, 1);
 }
 
 .dashboard_icon_menu .statistics:hover {
-    background-color: rgba(52, 73, 94, 1);
-    box-shadow: 5px 15px 20px -15px rgba(76, 86, 192, 1);
+    background-color: rgba(44, 62, 80, 1);
+    /* box-shadow: 0px 10px 20px rgba(44, 62, 80, 1); */
 }
 
+.dashboard_icon_menu .pti_registry:hover {
+    background-color: rgba(142, 68, 173, 1);
+    /* box-shadow: 0px 10px 20px rgba(142, 68, 173, 1); */
+}
 
-/* .dashboard_icon_menu .menu_item:hover {
-    box-shadow: 5px 15px 20px -15px rgba(000, 000, 000, 0.5);
-} */
+.dashboard_icon_menu .pti_registry_org:hover {
+    background-color: rgb(41, 128, 185, 1);
+    /* box-shadow: 5px 15px 20px -15px rgba(142, 68, 173, 0.5); */
+}
 
 .dashboard_icon_menu .menu_item .menu_item_title {
-    margin: 20px 0 0;
+    margin: 30px 0 0;
     text-align: center;
     font-family: 'Arial';
     font-size: 18px;
-    color: #808080;
+    color: rgba(000, 000, 000, 1);
     transition: font-size 500ms, color 500ms;
 }
 
@@ -122,25 +126,69 @@ td {
     color: white;
 }
 
-.dashboard_icon_menu .statistics .icon {
+.dashboard_icon_menu .menu_item .menu_item_subtitle {
+    margin: 10px 0 0;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 11px;
+    color: rgba(128, 128, 128, 1);
+    transition: font-size 500ms, color 500ms;
+}
+
+.dashboard_icon_menu .menu_item:hover .menu_item_subtitle {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dashboard_icon_menu .menu_item .icon {
     margin: auto;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background-image: url('../images/icons/statistics.png');
     background-size: 32px 32px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: rgba(52, 73, 94, 0.2);
     transition: width 500ms, height 500ms, background-size 500ms;
 }
 
-.dashboard_icon_menu .statistics:hover .icon {
+.dashboard_icon_menu .statistics .icon {
+    background-color: rgba(44, 62, 80, 0.1);
+    background-image: url('../images/icons/statistics.png');
+}
+
+.dashboard_icon_menu .pti_registry .icon {
+    background-color: rgb(142, 68, 173, 0.3);
+    background-image: url('../images/icons/statistics.png');
+}
+
+.dashboard_icon_menu .pti_registry_org .icon {
+    background-color: rgb(41, 128, 185, 0.3);
+    background-image: url('../images/icons/pti_registry_org.png');
+}
+
+.dashboard_icon_menu .menu_item:hover .icon {
     width: 90px;
     height: 90px;
     background-image: url('../images/icons/statistics-hover.png');
     background-size: 48px 48px;
     background-color: rgba(255, 255, 155, 0.2);
+}
+
+.dashboard_icon_menu .statistics:hover .icon {
+    background-image: url('../images/icons/statistics-hover.png');
+    /* background-color: rgba(255, 255, 155, 0.2); */
+    background-color: transparent;
+}
+
+.dashboard_icon_menu .pti_registry:hover .icon {
+    background-image: url('../images/icons/pti_registry_org-hover.png');
+    /* background-color: rgba(255, 255, 155, 0.2); */
+    background-color: transparent;
+}
+
+.dashboard_icon_menu .pti_registry_org:hover .icon {
+    background-image: url('../images/icons/pti_registry_org-hover.png');
+    /* background-color: rgba(255, 255, 155, 0.2); */
+    background-color: transparent;
 }
 
 
