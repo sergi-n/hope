@@ -64,7 +64,7 @@ td {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background-color: rgba(245, 247, 251, 1);
+    background-color: rgba(239, 241, 243, 1);
     transition: left 1000ms, top 1000ms, width 1000ms, height 1000ms;
 }
 
@@ -92,25 +92,26 @@ td {
     transition: width 500ms, height 500ms, background-color 500ms, box-shadow 500ms;
 }
 
-.dashboard_icon_menu .menu_item:hover {
+.dashboard_icon_menu .statistics:hover {
     width: 200px;
     height: 250px;
-}
-
-.dashboard_icon_menu .statistics:hover {
     background-color: rgba(44, 62, 80, 1);
-    /* box-shadow: 0px 10px 20px rgba(44, 62, 80, 1); */
 }
 
 .dashboard_icon_menu .pti_registry:hover {
+    width: 200px;
+    height: 250px;
     background-color: rgba(142, 68, 173, 1);
-    /* box-shadow: 0px 10px 20px rgba(142, 68, 173, 1); */
 }
 
 .dashboard_icon_menu .pti_registry_org:hover {
+    width: 200px;
+    height: 250px;
     background-color: rgb(41, 128, 185, 1);
-    /* box-shadow: 5px 15px 20px -15px rgba(142, 68, 173, 0.5); */
 }
+
+
+/* Menu item title */
 
 .dashboard_icon_menu .menu_item .menu_item_title {
     margin: 30px 0 0;
@@ -126,6 +127,9 @@ td {
     color: white;
 }
 
+
+/* Menu item subtitle */
+
 .dashboard_icon_menu .menu_item .menu_item_subtitle {
     margin: 10px 0 0;
     text-align: center;
@@ -138,6 +142,9 @@ td {
 .dashboard_icon_menu .menu_item:hover .menu_item_subtitle {
     color: rgba(255, 255, 255, 1);
 }
+
+
+/* Menu item icon */
 
 .dashboard_icon_menu .menu_item .icon {
     margin: auto;
@@ -157,7 +164,7 @@ td {
 
 .dashboard_icon_menu .pti_registry .icon {
     background-color: rgb(142, 68, 173, 0.3);
-    background-image: url('../images/icons/statistics.png');
+    background-image: url('../images/icons/pti_registry.png');
 }
 
 .dashboard_icon_menu .pti_registry_org .icon {
@@ -175,19 +182,16 @@ td {
 
 .dashboard_icon_menu .statistics:hover .icon {
     background-image: url('../images/icons/statistics-hover.png');
-    /* background-color: rgba(255, 255, 155, 0.2); */
     background-color: transparent;
 }
 
 .dashboard_icon_menu .pti_registry:hover .icon {
-    background-image: url('../images/icons/pti_registry_org-hover.png');
-    /* background-color: rgba(255, 255, 155, 0.2); */
+    background-image: url('../images/icons/pti_registry-hover.png');
     background-color: transparent;
 }
 
 .dashboard_icon_menu .pti_registry_org:hover .icon {
     background-image: url('../images/icons/pti_registry_org-hover.png');
-    /* background-color: rgba(255, 255, 155, 0.2); */
     background-color: transparent;
 }
 
