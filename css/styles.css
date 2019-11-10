@@ -225,6 +225,40 @@ td {
 }
 
 
+/* Taxi */
+
+.check_taxi_status {
+    width: 400px;
+}
+
+.input_container {
+    position: relative;
+    margin: 100px auto;
+    width: 350px;
+    height: 50px;
+    border: 1px solid rgba(243, 156, 18, 1);
+    border-radius: 25px;
+}
+
+.input_title {
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Arial';
+    font-size: 15px;
+    color: rgba(243, 156, 18, 1);
+}
+
+.input_container input {
+    border: none;
+    font-family: 'Arial';
+    font-size: 15px;
+    color: rgba(243, 156, 18, 1);
+    background-color: transparent;
+}
+
+
 /*  */
 
 .right_menu {
