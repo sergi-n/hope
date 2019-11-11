@@ -51,7 +51,7 @@
                     <div class="phonebook menu_item">
                         <div class="icon"></div>
                         <div class="menu_item_title">
-                            ტელ ცნობარი
+                            ტ. ცნობარი
                         </div>
                         <div class="menu_item_subtitle">
                             თანამშრობლები და მომწოდებლები
@@ -75,7 +75,12 @@
         <table class="important_dates_and_next_30_days_calendar">
             <tr>
                 <td class="important_dates">
-
+                    <div>
+                        <span class="title1">მნიშვნელოვანი</span>&nbsp;<span class="title2">თარიღები</span>
+                    </div>
+                    <!-- <span class="date">1234567890</span><span class="month">თებ.</span>
+                    <span class="date">13</span><span class="month">აპრ.</span>
+                    <span class="date">5</span><span class="month">სექ.</span> -->
                 </td>
                 <td class="next_30_days_calendar"></td>
             </tr>
@@ -110,6 +115,9 @@
         function show_hide_menu() {
             document.getElementsByClassName('dashboard')[0].classList.toggle('show_hide_menu');
             document.getElementsByClassName('dashboard_icon_menu')[0].classList.toggle('slide_dashboard_icon_menu');
+
+
+            document.getElementsByClassName('important_dates_and_next_30_days_calendar')[0].classList.toggle('slide_important_dates_and_next_30_days_calendar');
         }
     </script>
 </body>
