@@ -139,7 +139,7 @@ td {
 /* Menu item title */
 
 .dashboard_icon_menu .menu_item .menu_item_title {
-    margin: 30px 0 0;
+    margin: 20px 0 0;
     text-align: center;
     font-family: 'Arial';
     font-size: 20px;
@@ -171,8 +171,16 @@ td {
 
 /* Menu item icon */
 
-.dashboard_icon_menu .menu_item .icon {
+.dashboard_icon_menu .menu_item .icon_container {
     margin: auto;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    transition: width 500ms, height 500ms;
+}
+
+.dashboard_icon_menu .menu_item .icon {
+    margin: 2px auto;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -182,9 +190,17 @@ td {
     transition: width 500ms, height 500ms, background-color 500ms, background-size 500ms;
 }
 
+.dashboard_icon_menu .statistics .icon_container {
+    border: 1px solid rgba(44, 62, 80, 1);
+}
+
 .dashboard_icon_menu .statistics .icon {
-    background-color: rgba(44, 62, 80, 0.1);
+    background-color: rgba(44, 62, 80, 0.3);
     background-image: url('../images/icons/statistics.png');
+}
+
+.dashboard_icon_menu .pti_registry .icon_container {
+    border: 1px solid rgba(142, 68, 173, 1);
 }
 
 .dashboard_icon_menu .pti_registry .icon {
@@ -192,9 +208,17 @@ td {
     background-image: url('../images/icons/pti_registry.png');
 }
 
+.dashboard_icon_menu .pti_registry_org .icon_container {
+    border: 1px solid rgba(41, 128, 185, 1);
+}
+
 .dashboard_icon_menu .pti_registry_org .icon {
     background-color: rgba(41, 128, 185, 0.3);
     background-image: url('../images/icons/pti_registry_org.png');
+}
+
+.dashboard_icon_menu .phonebook .icon_container {
+    border: 1px solid rgba(39, 174, 96, 1);
 }
 
 .dashboard_icon_menu .phonebook .icon {
@@ -202,9 +226,19 @@ td {
     background-image: url('../images/icons/phone_book.png');
 }
 
+.dashboard_icon_menu .detailed_search .icon_container {
+    border: 1px solid rgba(22, 160, 133, 1);
+}
+
 .dashboard_icon_menu .detailed_search .icon {
     background-color: rgba(22, 160, 133, 0.3);
     background-image: url('../images/icons/detailed_searched.png');
+}
+
+.dashboard_icon_menu .menu_item:hover .icon_container {
+    width: 94px;
+    height: 94px;
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .dashboard_icon_menu .menu_item:hover .icon {
