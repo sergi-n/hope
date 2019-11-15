@@ -180,7 +180,7 @@ td {
 }
 
 .dashboard_icon_menu .menu_item .icon {
-    margin: 2px auto;
+    margin: 2px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -303,118 +303,6 @@ td {
 }
 
 
-/* Taxi */
-
-.check_taxi_status {
-    width: 400px;
-}
-
-.input_container {
-    position: relative;
-    margin: 100px auto;
-    width: 350px;
-    height: 50px;
-    border: 1px solid rgba(243, 156, 18, 1);
-    border-radius: 25px;
-}
-
-.input_title {
-    position: absolute;
-    left: 25px;
-    top: -10px;
-    background-color: rgba(255, 255, 255, 1);
-    font-family: 'Arial';
-    font-size: 15px;
-    color: rgba(243, 156, 18, 1);
-}
-
-.input_container input {
-    border: none;
-    font-family: 'Arial';
-    font-size: 15px;
-    color: rgba(243, 156, 18, 1);
-    background-color: transparent;
-}
-
-
-/*  */
-
-.right_menu {
-    position: absolute;
-    z-index: 2;
-    right: 5px;
-    top: 5px;
-    width: 100px;
-    height: 790px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.check_taxi {
-    margin: 10px auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 15px;
-    background-color: #FFCC33;
-}
-
-.check_pti_date {
-    margin: 10px auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 15px;
-    background-color: #3AA655;
-}
-
-.search_in_db {
-    margin: 10px auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 15px;
-    background-color: #FFFF66;
-}
-
-
-/* Test */
-
-.quick_search_button {
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    background-color: rgba(98, 72, 255, 1);
-    box-shadow: 0px 8px 10px 0px rgba(98, 72, 255, 0.6);
-    transition: box-shadow 500ms;
-}
-
-.quick_search_button img {
-    margin: 10px auto;
-    width: 50px;
-}
-
-.pti_date_button {
-    display: block;
-    margin: 10px auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    background-color: rgba(0, 172, 238, 1);
-    box-shadow: 0px 8px 10px 0px rgba(0, 172, 238, 0.6);
-    transition: box-shadow 500ms;
-}
-
-.taxi_status_button {
-    display: block;
-    margin: 10px auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    background-color: rgba(255, 243, 128, 1);
-    box-shadow: 0px 8px 10px 0px rgba(255, 243, 128, 0.5);
-    transition: box-shadow 500ms;
-}
-
-
 /* first content layer */
 
 .important_dates_and_next_30_days_calendar {
@@ -429,11 +317,6 @@ td {
 
 .slide_important_dates_and_next_30_days_calendar {
     left: calc(25% - 120px);
-}
-
-.important_dates_and_next_30_days_calendar td {
-    /* border-spacing: 15px; */
-    /* padding: 0; */
 }
 
 .important_dates_list {
@@ -563,4 +446,38 @@ td {
     text-align: center;
 }
 
-fff380
+
+/* Side Bar */
+
+.right_menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 70px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgba(76, 86, 192, 1);
+    box-shadow: inset -10px 0 20px -10px rgba(000, 000, 000, 0.8);
+}
+
+.taxi {
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgba(253, 211, 157, 1);
+    box-shadow: 0px 10px 20px -10px rgba(000, 000, 000, 1);
+}
+
+.gas {
+    position: absolute;
+    right: 35px;
+    top: 110px;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #92dff3;
+    box-shadow: 0px 10px 20px -10px rgba(000, 000, 000, 1);
+}
